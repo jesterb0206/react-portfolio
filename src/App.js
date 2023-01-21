@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Navigation from './Components/Navigation';
-import Project from './Components/Project';
+import Portfolio from './Components/Portfolio';
 import About from './Components/About';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navigation />
       </nav>
       <section>
-        <Project />
+        <Portfolio />
         <About />
       </section>
       <Footer />
