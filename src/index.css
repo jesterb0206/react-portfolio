@@ -1,5 +1,45 @@
+/* Universal Selector */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
+
+#root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+
+nav {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+/* Body */
+
+/* Footer */

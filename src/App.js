@@ -6,12 +6,16 @@ import Project from './Components/Project';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <>
+      <nav>
+        <Header />
+        <Navigation />
+      </nav>
+      <main>
+        <Project />
+      </main>
       <Footer />
-      <Navigation />
-      <Project />
-    </div>
+    </>
   );
 }
 
