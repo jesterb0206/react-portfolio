@@ -136,11 +136,13 @@ nav ul {
 #portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
+  left: -5px;
+  position: relative;
 }
 
 #single-project {
   cursor: pointer;
-  margin: 15px 15px;
+  margin: 10px;
   position: relative;
 }
 
