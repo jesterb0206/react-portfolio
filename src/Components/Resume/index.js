@@ -11,6 +11,7 @@ const Resume = () => {
       <div id='frontend'>
         <h1>Front End</h1>
         <ul>
+          <li>Adode Express</li>
           <li>AJAX</li>
           <li>APIs</li>
           <li>Bootstrap</li>

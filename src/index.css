@@ -29,7 +29,7 @@ h5,
 li,
 p,
 textarea {
-  font-family: 'Jura';
+  font-family: 'Jura', sans-serif;
 }
 
 #about,
@@ -43,7 +43,7 @@ nav,
 h1,
 h2,
 h3 {
-  font-family: 'Anonymous Pro';
+  font-family: 'Anonymous Pro', monospace;
 }
 
 h2,
@@ -74,6 +74,10 @@ main {
 #main-section-header {
   font-size: 25px;
   padding-bottom: 10px;
+}
+
+p {
+  letter-spacing: 1px;
 }
 
 /*----------------------------------------------------------------*/
@@ -215,11 +219,27 @@ nav ul {
 /* Footer */
 
 #footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
+#footer hr {
+  margin-top: 15px;
+  opacity: 0.2;
+  width: 96vw;
+}
+
 .footer-icons {
+  height: 50px;
+  margin: 25px 10px;
+  object-fit: cover;
   width: 50px;
+}
+
+#footer-wrapper {
+  display: flex;
 }
 
 /*----------------------------------------------------------------*/
