@@ -1,3 +1,5 @@
+import React, {useState} from 'react';
+
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
@@ -6,15 +8,30 @@ import Portfolio from './Components/Portfolio';
 import About from './Components/About';
 
 function App() {
+  const [activePage, setActivePage] = useState({
+    about: true,
+    portfolio: false,
+    contact: false,
+    resume: false,
+  });
   return (
     <main>
       <nav>
         <Header />
-        <Navigation />
+        <Navigation activePage={activePage} setActivePage={setActivePage} />
       </nav>
-      <section>
-        <Portfolio />
-        <About />
+      <section id='main-wrapper'>
+        {activePage.about ? (
+          <About />
+        ) : activePage.portfolio ? (
+          <Portfolio />
+        ) : activePage.contact ? (
+          'Contact Component'
+        ) : activePage.resume ? (
+          'Resume Component'
+        ) : (
+          ''
+        )}
       </section>
       <Footer />
     </main>
