@@ -12,13 +12,15 @@
 /* Universal Properties */
 
 #about,
+#contact-form,
 nav,
-#portfolio {
+#portfolio,
+#resume {
   padding: 0 25px;
 }
 
 main {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
@@ -149,6 +151,10 @@ nav ul {
 /*----------------------------------------------------------------*/
 
 /* Footer */
+
+#footer {
+  margin: 0 auto;
+}
 
 .footer-icons {
   width: 50px;

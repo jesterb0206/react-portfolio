@@ -1,11 +1,14 @@
 import React from 'react';
-import headShot from '../../images/head-shot.jpg';
 
 const About = () => {
   return (
     <div id='about'>
       <h1 id='main-section-header'>About Me</h1>
-      <img id='portrait' src={headShot} alt='Bradley Jester Head Shot' />
+      <img
+        id='portrait'
+        src='https://i.imgur.com/oViGsqf.jpg'
+        alt='Bradley Jester Head Shot'
+      />
       <h1>Hi, I'm Bradley!</h1>
       <p>
         Front-end web developer leveraging background in communication to build

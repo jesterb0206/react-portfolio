@@ -7,6 +7,7 @@ import Navigation from './Components/Navigation';
 import Portfolio from './Components/Portfolio';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Resume from './Components/Resume';
 
 function App() {
   const [activePage, setActivePage] = useState({
@@ -30,7 +31,7 @@ function App() {
         ) : activePage.contact ? (
           <Contact />
         ) : activePage.resume ? (
-          'Resume Component'
+          <Resume />
         ) : (
           ''
         )}
