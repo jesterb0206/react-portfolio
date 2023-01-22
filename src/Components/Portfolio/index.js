@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 
-const index = () => {
+const Portfolio = () => {
   const project = [
     {
       title: 'Art Cart',
@@ -54,4 +54,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Portfolio;

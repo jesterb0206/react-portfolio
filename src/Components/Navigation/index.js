@@ -1,6 +1,6 @@
 import React from 'react';
 
-const index = ({setActivePage, activePage}) => {
+const Navigation = ({setActivePage, activePage}) => {
   const handlePage = (e) => {
     if (e.target.innerText === 'About me') {
       setActivePage({about: true});
@@ -11,7 +11,6 @@ const index = ({setActivePage, activePage}) => {
     } else if (e.target.innerText === 'Resume') {
       setActivePage({resume: true});
     }
-    console.log(activePage);
   };
   return (
     <ul>
@@ -37,4 +36,4 @@ const index = ({setActivePage, activePage}) => {
   );
 };
 
-export default index;
+export default Navigation;

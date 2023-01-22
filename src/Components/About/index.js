@@ -1,7 +1,7 @@
 import React from 'react';
 import headShot from '../../images/head-shot.jpg';
 
-const index = () => {
+const About = () => {
   return (
     <div id='about'>
       <h1 id='main-section-header'>About Me</h1>
@@ -22,4 +22,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;
