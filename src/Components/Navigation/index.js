@@ -14,42 +14,49 @@ const Navigation = ({setActivePage, activePage}) => {
     }
   };
   return (
-    <ul>
-      <li>
+    <div>
+      <ul>
+        <li>
+          <a
+            className={`navItem ${activePage.about ? 'active' : ''}`}
+            href='#'
+            onClick={(e) => handlePage(e)}
+          >
+            About Me
+          </a>
+        </li>
+        <li>
+          <a
+            className={`navItem ${activePage.portfolio ? 'active' : ''}`}
+            href='#'
+            onClick={(e) => handlePage(e)}
+          >
+            Portfolio
+          </a>
+        </li>
         <a
-          className={`navItem ${activePage.about ? 'active' : ''}`}
+          className={`navItem ${activePage.contact ? 'active' : ''}`}
           href='#'
           onClick={(e) => handlePage(e)}
         >
-          About Me
+          Contact
         </a>
-      </li>
-      <li>
-        <a
-          className={`navItem ${activePage.portfolio ? 'active' : ''}`}
-          href='#'
-          onClick={(e) => handlePage(e)}
-        >
-          Portfolio
-        </a>
-      </li>
-      <a
-        className={`navItem ${activePage.contact ? 'active' : ''}`}
-        href='#'
-        onClick={(e) => handlePage(e)}
-      >
-        Contact
-      </a>
-      <li>
-        <a
-          className={`navItem ${activePage.resume ? 'active' : ''}`}
-          href='#'
-          onClick={(e) => handlePage(e)}
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
+        <li>
+          <a
+            className={`navItem ${activePage.resume ? 'active' : ''}`}
+            href='#'
+            onClick={(e) => handlePage(e)}
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
+      <img
+        id='nav-stack'
+        src='https://imgpile.com/images/RVqHWF.png'
+        alt='Navigation Icon'
+      ></img>
+    </div>
   );
 };
 

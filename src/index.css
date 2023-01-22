@@ -147,6 +147,12 @@ nav li a {
   text-decoration: none;
 }
 
+#nav-stack {
+  display: none;
+  filter: invert(1);
+  width: 50px;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -399,6 +405,16 @@ form button:hover {
 @media (max-width: 1180px) {
   #about-wrapper {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #nav-stack {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
   }
 }
 
