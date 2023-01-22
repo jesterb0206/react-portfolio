@@ -20,7 +20,7 @@ function App() {
   return (
     <main>
       <nav>
-        <Header />
+        <Header activePage={activePage} setActivePage={setActivePage} />
         <Navigation activePage={activePage} setActivePage={setActivePage} />
       </nav>
       <section id='main-wrapper'>
