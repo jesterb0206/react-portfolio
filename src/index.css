@@ -1,15 +1,36 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: local('Anonymous Pro'), url('./Fonts/AnonymousPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: local('Jura'), url('./Fonts/Jura-Medium.ttf');
+}
+
 /* Universal Selector */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Anonymous Pro;
 }
 
 /*----------------------------------------------------------------*/
 
 /* Universal Properties */
+
+a,
+h4,
+h5,
+li,
+p,
+textarea {
+  font-family: 'Jura';
+}
 
 #about,
 #contact-form,
@@ -19,13 +40,39 @@ nav,
   padding: 0 25px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Anonymous Pro';
+}
+
+h2,
+h3,
+h4,
+h5,
+input,
+input::placeholder,
+p,
+textarea,
+textarea::placeholder {
+  color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.5;
+}
+
 main {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 #main-section-header {
+  font-size: 25px;
   padding-bottom: 10px;
 }
 
@@ -68,6 +115,7 @@ nav ul {
 /* Main Wrapper Styling */
 
 #main-wrapper {
+  margin-left: 15px;
   margin-top: 125px;
 }
 
@@ -76,7 +124,7 @@ nav ul {
 /* About Me Component Styling */
 
 #about {
-  width: 50%;
+  width: 80%;
 }
 
 #about h1 {
@@ -146,6 +194,20 @@ nav ul {
   cursor: pointer;
   margin: 10px;
   position: relative;
+}
+
+/*----------------------------------------------------------------*/
+
+/* Contact Page Styling */
+
+#resume h1 {
+  margin-top: 25px;
+}
+
+#resume li {
+  list-style: circle;
+  margin-left: 22.5px;
+  text-indent: 10px;
 }
 
 /*----------------------------------------------------------------*/
