@@ -331,6 +331,25 @@ form button:hover {
 
 /*----------------------------------------------------------------*/
 
+/* Resume Styling */
+
+#resume-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#resume-wrapper div {
+  margin-right: 50px;
+}
+
+#resume-wrapper h1 {
+  color: var(--fuchsia);
+}
+
+#resume-wrapper li {
+  color: var(--mint);
+}
+
 /* Footer */
 
 #footer {
