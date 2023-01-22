@@ -73,6 +73,7 @@ const Portfolio = () => {
   return (
     <div id='portfolio'>
       <h1 id='main-section-header'>My Portfolio</h1>
+      <hr id='main-section-hr' />
       <div id='portfolio-wrapper'>
         {project.map((item, id) => {
           return (

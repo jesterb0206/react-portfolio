@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <div id='resume'>
       <h1 id='main-section-header'>Resume</h1>
-
+      <hr id='main-section-hr' />
       <a href={`./Resume/Bradley Jester's Resume.pdf`} download>
         Download Here!
       </a>

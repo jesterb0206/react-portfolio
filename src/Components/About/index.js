@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div id='about'>
       <h1 id='main-section-header'>About Me</h1>
+      <hr id='main-section-hr' />
       <div id='about-wrapper'>
         <img
           id='portrait'

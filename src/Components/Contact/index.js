@@ -41,6 +41,7 @@ const Contact = () => {
   return (
     <form id='contact-form' onSubmit={handleSubmit}>
       <h1 id='main-section-header'>Contact</h1>
+      <hr id='main-section-hr' />
       <div className='form-inner-container'>
         <input
           onChange={storeData}

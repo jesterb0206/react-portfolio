@@ -81,6 +81,12 @@ main {
   padding-bottom: 25px;
 }
 
+#main-section-hr {
+  margin-bottom: 30px;
+  opacity: 1;
+  width: 91vw;
+}
+
 p {
   color: black;
   letter-spacing: 1px;
