@@ -72,8 +72,9 @@ main {
 }
 
 #main-section-header {
-  font-size: 25px;
-  padding-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-bottom: 25px;
 }
 
 p {
@@ -96,6 +97,24 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   width: 100%;
   z-index: 100;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  opacity: 0.55;
+}
+
+.navItem.active {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.navItem:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 nav li {
@@ -128,7 +147,12 @@ nav ul {
 /* About Me Component Styling */
 
 #about {
-  width: 80%;
+  width: 90%;
+}
+
+#about-wrapper {
+  align-items: center;
+  display: flex;
 }
 
 #about h1 {
@@ -141,7 +165,8 @@ nav ul {
 }
 
 #portrait {
-  width: 175px;
+  margin-right: 25px;
+  width: 250px;
 }
 
 /*----------------------------------------------------------------*/
@@ -204,7 +229,9 @@ nav ul {
 
 /* Contact Page Styling */
 
-#resume h1 {
+#backend h1,
+#dev-tools h1,
+#frontend h1 {
   margin-top: 25px;
 }
 
@@ -226,9 +253,9 @@ nav ul {
 }
 
 #footer hr {
-  margin-top: 15px;
+  margin-top: 30px;
   opacity: 0.2;
-  width: 96vw;
+  width: 91vw;
 }
 
 .footer-icons {
@@ -240,6 +267,16 @@ nav ul {
 
 #footer-wrapper {
   display: flex;
+}
+
+/*----------------------------------------------------------------*/
+
+/* Media Queries */
+
+@media (max-width: 1180px) {
+  #about-wrapper {
+    flex-direction: column;
+  }
 }
 
 /*----------------------------------------------------------------*/

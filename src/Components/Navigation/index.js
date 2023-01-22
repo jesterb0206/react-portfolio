@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 const Navigation = ({setActivePage, activePage}) => {
   const handlePage = (e) => {
-    if (e.target.innerText === 'About me') {
+    if (e.target.innerText === 'About Me') {
       setActivePage({about: true});
     } else if (e.target.innerText === 'Portfolio') {
       setActivePage({portfolio: true});
@@ -15,20 +16,36 @@ const Navigation = ({setActivePage, activePage}) => {
   return (
     <ul>
       <li>
-        <a href='#' onClick={(e) => handlePage(e)}>
+        <a
+          className={`navItem ${activePage.about ? 'active' : ''}`}
+          href='#'
+          onClick={(e) => handlePage(e)}
+        >
           About Me
         </a>
       </li>
       <li>
-        <a href='#' onClick={(e) => handlePage(e)}>
+        <a
+          className={`navItem ${activePage.portfolio ? 'active' : ''}`}
+          href='#'
+          onClick={(e) => handlePage(e)}
+        >
           Portfolio
         </a>
       </li>
-      <a href='#' onClick={(e) => handlePage(e)}>
+      <a
+        className={`navItem ${activePage.contact ? 'active' : ''}`}
+        href='#'
+        onClick={(e) => handlePage(e)}
+      >
         Contact
       </a>
       <li>
-        <a href='#' onClick={(e) => handlePage(e)}>
+        <a
+          className={`navItem ${activePage.resume ? 'active' : ''}`}
+          href='#'
+          onClick={(e) => handlePage(e)}
+        >
           Resume
         </a>
       </li>

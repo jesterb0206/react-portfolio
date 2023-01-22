@@ -28,7 +28,7 @@ const Resume = () => {
           <li>Tailwind CSS</li>
         </ul>
       </div>
-      <div id='Dev-tools'>
+      <div id='dev-tools'>
         <h1>Dev Tools / Production</h1>
         <ul>
           <li>Babel</li>
