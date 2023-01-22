@@ -39,45 +39,43 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact-form' onSubmit={handleSubmit}>
-      <form>
-        <h1 id='main-section-header'>Contact Me!</h1>
-        <div className='form-inner-container'>
-          <input
-            onChange={storeData}
-            className='name'
-            type='text'
-            name='fromName'
-            id='fromName'
-            placeholder='Full name*'
-          />
-          <input
-            onChange={storeData}
-            name='from_email'
-            id='from_email'
-            className='email'
-            type='email'
-            placeholder='E-mail*'
-          />
-          <input
-            onChange={storeData}
-            name='subjectText'
-            id='subjectText'
-            className='subject'
-            type='text'
-            placeholder='Subject*'
-          />
-          <textarea
-            onChange={storeData}
-            name='message'
-            id='msg'
-            placeholder='Message*'
-          ></textarea>
-        </div>
-        <p id='status'></p>
-        <button id='sendBtn'>Send</button>
-      </form>
-    </section>
+    <form id='contact-form' onSubmit={handleSubmit}>
+      <h1 id='main-section-header'>Contact</h1>
+      <div className='form-inner-container'>
+        <input
+          onChange={storeData}
+          className='name'
+          type='text'
+          name='fromName'
+          id='fromName'
+          placeholder='Full Name*'
+        />
+        <input
+          onChange={storeData}
+          name='from_email'
+          id='from_email'
+          className='email'
+          type='email'
+          placeholder='E-email*'
+        />
+        <input
+          onChange={storeData}
+          name='subjectText'
+          id='subjectText'
+          className='subject'
+          type='text'
+          placeholder='Subject*'
+        />
+        <textarea
+          onChange={storeData}
+          name='message'
+          id='msg'
+          placeholder='Message*'
+        ></textarea>
+      </div>
+      <p id='status'></p>
+      <button id='sendBtn'>Send</button>
+    </form>
   );
 };
 

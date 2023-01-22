@@ -23,6 +23,13 @@
 
 /* Universal Properties */
 
+:root {
+  --fuchsia: #ca2c92;
+  --mint: #277257;
+  --orange: #ffa500;
+  --slate-blue: #6a5acd;
+}
+
 a,
 h4,
 h5,
@@ -56,12 +63,7 @@ input::placeholder,
 p,
 textarea,
 textarea::placeholder {
-  color: #333;
-}
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 0.5;
+  color: white;
 }
 
 main {
@@ -73,12 +75,14 @@ main {
 }
 
 #main-section-header {
+  color: var(--fuchsia);
   font-size: 30px;
   letter-spacing: 2px;
   padding-bottom: 25px;
 }
 
 p {
+  color: black;
   letter-spacing: 1px;
 }
 
@@ -88,7 +92,7 @@ p {
 
 nav {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--slate-blue);
   backdrop-filter: blur(5px);
   color: white;
   display: flex;
@@ -157,10 +161,12 @@ nav ul {
 }
 
 #about h1 {
+  color: var(--fuchsia);
   margin: 5px 0;
 }
 
 #about p {
+  color: var(--mint);
   font-size: 18px;
   line-height: 1.3;
 }
@@ -175,7 +181,8 @@ nav ul {
 /* Portfolio Styling */
 
 #project-details {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 166, 0, 0.8);
+  color: white;
   backdrop-filter: blur(8px);
   height: 100%;
   opacity: 0;
@@ -202,6 +209,16 @@ nav ul {
   text-indent: 10px;
 }
 
+#project-links a {
+  text-decoration: none;
+  color: black;
+}
+
+#project-links a:hover {
+  text-decoration: none;
+  color: var(--mint);
+}
+
 #project-outer-wrapper {
   align-items: flex-start;
   display: flex;
@@ -210,7 +227,8 @@ nav ul {
 }
 
 #project-stack {
-  font-size: 18px;
+  color: white;
+  font-size: 15px;
 }
 
 #project-stack,
@@ -254,6 +272,63 @@ nav ul {
   text-indent: 10px;
 }
 
+#status {
+  margin-bottom: 20px;
+}
+
+.subject {
+  grid-column: 1/3;
+}
+
+form button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 175px;
+  border-radius: 5px;
+}
+
+form button:active {
+  background-color: #cc8500;
+  transform: scale(0.98);
+}
+
+form button:hover {
+  background-color: #cc8500;
+}
+
+.form-inner-container {
+  column-gap: 20px;
+  display: grid;
+  grid-template: 38px 38px 125px / 25vw 25vw;
+  margin-bottom: 20px;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.form-inner-container input::placeholder,
+.form-inner-container textarea::placeholder {
+  color: var(--mint);
+}
+
+.form-inner-container input[type='email'],
+.form-inner-container input[type='text'],
+.form-inner-container textarea {
+  color: var(--mint);
+  border: 3px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.form-inner-container textarea {
+  padding-top: 10px;
+  grid-column: 1/3;
+  resize: none;
+}
+
 /*----------------------------------------------------------------*/
 
 /* Footer */
@@ -267,7 +342,7 @@ nav ul {
 
 #footer hr {
   margin-top: 30px;
-  opacity: 0.2;
+  opacity: 1;
   width: 91vw;
 }
 
