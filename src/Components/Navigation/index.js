@@ -3,7 +3,10 @@ import React, {useState} from 'react';
 
 const Navigation = ({setActivePage, activePage}) => {
   const handlePage = (e) => {
-    if (e.target.innerText === 'About Me') {
+    if (
+      e.target.innerText === 'About Me' ||
+      e.target.innerText === 'Bradley Jester'
+    ) {
       setActivePage({about: true});
     } else if (e.target.innerText === 'Portfolio') {
       setActivePage({portfolio: true});
@@ -96,6 +99,11 @@ const Navigation = ({setActivePage, activePage}) => {
             onClick={(e) => handlePage(e)}
           >
             Resume
+          </a>
+        </li>
+        <li>
+          <a className={`navItem`} href='#About' onClick={(e) => handlePage(e)}>
+            Bradley Jester
           </a>
         </li>
       </ul>

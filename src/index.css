@@ -490,96 +490,117 @@ form button:hover {
     text-align: justify;
     width: unset !important;
   }
+
   #about-wrapper {
     align-items: center;
   }
+
+  #backend h1,
+  #dev-tools h1,
+  #frontend h1 {
+    font-size: 22px;
+  }
+
+  #backend li,
+  #dev-tools li,
+  #frontend li {
+    font-size: 18px;
+  }
+
+  #backend,
+  #dev-tools,
+  #frontend {
+    margin: 0 15px;
+  }
+
   #contact-form {
     display: flex;
     justify-content: center;
   }
-  #desktop-nav,
-  #header-logo {
-    display: none;
-  }
-  #frontend h1,
-  #backend h1,
-  #dev-tools h1 {
-    font-size: 22px;
-  }
-  #frontend li,
-  #backend li,
-  #dev-tools li {
-    font-size: 18px;
-  }
-  #frontend,
-  #backend,
-  #dev-tools {
-    margin: 0 15px;
-  }
-  #main-wrapper {
-    margin-left: 15px;
-    margin-top: 50px !important;
-  }
-  #main-wrapper {
-    margin-left: 0;
-    margin-top: 125px;
-  }
-  #nav-stack {
-    display: flex;
-  }
-  #portfolio,
+
   #contact-form,
-  #resume,
-  nav {
+  nav,
+  #portfolio,
+  #resume {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 0;
   }
+
+  #desktop-nav,
+  #header-logo {
+    display: none;
+  }
+
+  #main-section-header {
+    font-size: 28px;
+  }
+
+  #main-section-hr {
+    width: 270px;
+  }
+
+  #main-wrapper {
+    margin-left: 0;
+    margin-top: 125px;
+  }
+
+  #nav-stack {
+    display: flex;
+  }
+
   #portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     left: 0;
   }
-  #portfolio-wrapper {
-    left: 0 !important;
-    position: relative;
-  }
+
   #portrait {
     margin-right: 0 !important;
   }
+
   #project-links {
     text-indent: 23px !important;
   }
+
   #resume-wrapper {
     justify-content: center;
     text-align: left;
   }
+
   #resume-wrapper div {
     margin-right: 0 !important;
   }
+
   #single-project {
     margin-left: 25px;
     margin-right: 20px;
   }
+
   #status {
     text-align: center;
     width: 80vw;
   }
+
   .mobile-nav {
     display: unset;
   }
+
   .nav-stack {
     display: flex;
   }
+
   main {
     align-items: center;
   }
+
   nav {
     backdrop-filter: none;
     background-color: transparent;
   }
+
   nav ul {
     display: none;
   }
