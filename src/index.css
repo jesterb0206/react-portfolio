@@ -120,22 +120,9 @@ nav {
   z-index: 100;
 }
 
-.navItem {
-  color: white;
-  text-decoration: none;
-  opacity: 0.55;
-}
-
-.navItem.active {
-  color: white;
-  text-decoration: none;
-  opacity: 1;
-}
-
-.navItem:hover {
-  color: white;
-  text-decoration: none;
-  opacity: 0.8;
+#desktop-nav {
+  display: flex;
+  list-style: none;
 }
 
 nav li {
@@ -147,15 +134,75 @@ nav li a {
   text-decoration: none;
 }
 
-#nav-stack {
-  display: none;
-  filter: invert(1);
-  width: 50px;
+.navItem {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
-nav ul {
-  display: flex;
+.navItem:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.navItem.active {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.nav-stack {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  padding: 0 2px;
+  position: absolute;
+  right: 20px;
+  top: 12.5px;
+  transition: 0.4s all ease-in-out;
+  width: 55px;
+}
+
+.nav-stack.active {
+  transition: 0.4s all ease-in-out;
+  right: 175px;
+}
+
+.mobile-nav {
+  backdrop-filter: blur(5px);
+  background-color: rgba(105, 90, 205, 0.9);
+  display: none;
+  height: 100vh;
   list-style: none;
+  position: absolute;
+  right: -160px;
+  top: 0;
+  transition: 0.4s all ease-in-out;
+  -webkit-backdrop-filter: blur(5px);
+  width: 160px;
+}
+
+.mobile-nav.active {
+  backdrop-filter: blur(5px);
+  background-color: rgba(105, 90, 205, 0.9);
+  height: 100vh;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s all ease-in-out;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.mobile-nav li:first-child {
+  margin-top: 35px;
+}
+
+.mobile-nav li {
+  font-size: 23px;
+  margin-bottom: 35px;
 }
 
 /*----------------------------------------------------------------*/
@@ -415,6 +462,32 @@ form button:hover {
 
   nav ul {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #desktop-nav,
+  #header-logo {
+    display: none;
+  }
+
+  #main-wrapper {
+    margin-left: 15px;
+    margin-top: 50px !important;
+  }
+
+  .mobile-nav {
+    display: unset;
+  }
+
+  nav {
+    backdrop-filter: none;
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav-stack {
+    display: flex;
   }
 }
 
