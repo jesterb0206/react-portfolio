@@ -465,7 +465,7 @@ form button:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #desktop-nav,
   #header-logo {
     display: none;
