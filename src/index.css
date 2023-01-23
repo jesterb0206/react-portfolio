@@ -632,7 +632,7 @@ form button:hover {
   }
 
   .form-inner-container {
-    grid-template: 42px 42px 42px 175px / 75vw;
+    grid-template: 42px 42px 42px 175px / 80vw;
   }
 }
 
