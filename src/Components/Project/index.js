@@ -17,13 +17,19 @@ const Project = ({
         </div>
         <img id='project-image' src={image_url} alt={image_alt} />
       </div>
-      <div id='project-links'>
-        <a target='_blank' rel='noreferrer noopener' href={github_link}>
-          GitHub Repository
-        </a>
-        <a target='_blank' rel='noreferrer noopener' href={deployed_link}>
-          Deployed Link
-        </a>
+      <div id='project-bottom-section'>
+        <div id='project-links'>
+          <a target='_blank' rel='noreferrer noopener' href={github_link}>
+            GitHub Repository
+          </a>
+          <a target='_blank' rel='noreferrer noopener' href={deployed_link}>
+            Deployed Link
+          </a>
+        </div>
+        <div id='project-desc'>
+          <p>{title}</p>
+          <p>{stack}</p>
+        </div>
       </div>
     </div>
   );

@@ -263,6 +263,19 @@ nav li a {
 
 /* Portfolio Styling */
 
+#project-bottom-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#project-desc {
+  display: none;
+}
+
+#project-desc #project-links {
+  text-indent: 24px;
+}
+
 #project-details {
   background-color: rgba(255, 166, 0, 0.8);
   color: white;
@@ -567,10 +580,6 @@ form button:hover {
     margin-right: 0 !important;
   }
 
-  #project-links {
-    text-indent: 23px !important;
-  }
-
   #resume-wrapper {
     justify-content: center;
     text-align: left;
@@ -632,8 +641,40 @@ form button:hover {
 /* Max Width 551px */
 
 @media (max-width: 551px) {
+  #project-bottom-section {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+  }
+
+  #project-bottom-section a,
+  #project-bottom-section p {
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  }
+
+  #project-desc,
+  #project-links {
+    text-indent: 24px;
+  }
+
+  #project-desc,
+  #project-links {
+    text-indent: 0 !important;
+  }
+
   #project-image {
     width: 80vw !important;
+  }
+
+  #project-image {
+    width: 80vw !important;
+  }
+
+  #project-outer-wrapper {
+    align-items: center !important;
   }
 }
 
