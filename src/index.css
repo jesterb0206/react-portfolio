@@ -322,8 +322,6 @@ nav li a {
 #portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
-  left: -5px;
-  position: relative;
 }
 
 #single-project {
