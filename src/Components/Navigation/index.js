@@ -7,12 +7,16 @@ const Navigation = ({setActivePage, activePage}) => {
       e.target.innerText === 'About Me' ||
       e.target.innerText === 'Bradley Jester'
     ) {
+      document.title = e.target.innerText;
       setActivePage({about: true});
     } else if (e.target.innerText === 'Portfolio') {
+      document.title = e.target.innerText;
       setActivePage({portfolio: true});
     } else if (e.target.innerText === 'Contact') {
+      document.title = e.target.innerText;
       setActivePage({contact: true});
     } else if (e.target.innerText === 'Resume') {
+      document.title = e.target.innerText;
       setActivePage({resume: true});
     }
     setActiveNav(false);
