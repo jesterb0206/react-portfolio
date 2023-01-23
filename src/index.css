@@ -170,13 +170,13 @@ nav li a {
   position: absolute;
   right: 20px;
   top: 12.5px;
-  transition: 0.4s all ease-in-out;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   width: 55px;
 }
 
 .nav-stack.active {
-  transition: 0.4s all ease-in-out;
-  right: 175px;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
+  right: 185px;
 }
 
 .mobile-nav {
@@ -186,11 +186,11 @@ nav li a {
   height: 100vh;
   list-style: none;
   position: absolute;
-  right: -160px;
+  right: -170px;
   top: 0;
-  transition: 0.4s all ease-in-out;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   -webkit-backdrop-filter: blur(5px);
-  width: 160px;
+  width: 170px;
 }
 
 .mobile-nav.active {
@@ -201,7 +201,7 @@ nav li a {
   position: absolute;
   right: 0;
   top: 0;
-  transition: 0.4s all ease-in-out;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   -webkit-backdrop-filter: blur(5px);
 }
 
@@ -212,6 +212,12 @@ nav li a {
 .mobile-nav li {
   font-size: 23px;
   margin-bottom: 35px;
+}
+
+#nav-logo {
+  bottom: -15px;
+  font-size: 20px;
+  position: absolute;
 }
 
 /*----------------------------------------------------------------*/

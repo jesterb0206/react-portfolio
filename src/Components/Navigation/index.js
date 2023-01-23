@@ -101,7 +101,7 @@ const Navigation = ({setActivePage, activePage}) => {
             Resume
           </a>
         </li>
-        <li>
+        <li id='nav-logo'>
           <a className={`navItem`} href='#About' onClick={(e) => handlePage(e)}>
             Bradley Jester
           </a>
