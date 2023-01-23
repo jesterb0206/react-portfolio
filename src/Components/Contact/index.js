@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import {validateEmail} from '../../utils/helpers';
 
 const Contact = () => {
   // Setups the Form Data State Object
 
   const statusEl = document.getElementById('status');
+
   const [formData, setFormData] = useState({
     fromName: '',
     from_email: '',
@@ -15,6 +17,7 @@ const Contact = () => {
   // Handles the Form Submission
 
   const handleSubmit = (e) => {
+    document.getElementById('email-status').textContent = '';
     e.preventDefault();
     if (
       fromName === '' ||
@@ -26,16 +29,64 @@ const Contact = () => {
         'Message sent failed, please fill in all of the required fields!';
       statusEl.style.color = 'red';
     } else {
-      statusEl.innerText = 'Message sent successfully!';
-      statusEl.style.color = 'green';
+      if (validateEmail(from_email)) {
+        statusEl.innerText = 'Message sent successfully!';
+        statusEl.style.color = 'green';
+        setTimeout(() => {
+          statusEl.innerText = '';
+        }, 1500);
+      } else {
+        statusEl.innerText = 'Invalid email format, please try again!';
+        statusEl.style.color = 'red';
+      }
     }
-    console.log(formData);
   };
 
   // Capture the Form Data
 
   const storeData = (e) => {
+    document.getElementById('status').textContent = '';
+
+    if (e.target.name === 'from_email') {
+      const emailStatusEl = document.getElementById('email-status');
+
+      if (e.target.value === '') {
+        emailStatusEl.innerText = '';
+      } else {
+        if (validateEmail(e.target.value)) {
+          emailStatusEl.innerText = 'Valid email!';
+          emailStatusEl.style.color = 'green';
+        } else {
+          emailStatusEl.innerText = 'Invalid email format, please try again!';
+          emailStatusEl.style.color = 'red';
+        }
+      }
+    }
     setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const updateEl = (e, errorPlaceholder, defaultPlaceholder, id) => {
+    if (e.target.value === '') {
+      document.getElementById(id).placeholder = errorPlaceholder;
+      document.getElementById(id).style.border = '2px solid red';
+    } else {
+      document.getElementById(id).placeholder = defaultPlaceholder;
+      document.getElementById(id).style.border = '2px solid transparent';
+    }
+  };
+  const checkForm = (e) => {
+    if (e.target.name === 'fromName') {
+      updateEl(e, 'Full Name  Required*', 'Full Name*', 'fromName');
+    }
+    if (e.target.name === 'from_email') {
+      updateEl(e, 'E-mail  Required*', 'E-mail*', 'from_email');
+    }
+    if (e.target.name === 'subjectText') {
+      updateEl(e, 'Subject  Required*', 'Subject*', 'subjectText');
+    }
+    if (e.target.name === 'message') {
+      updateEl(e, 'Message  Required*', 'Message*', 'msg');
+    }
   };
 
   return (
@@ -44,6 +95,7 @@ const Contact = () => {
       <hr id='main-section-hr' />
       <div className='form-inner-container'>
         <input
+          onBlur={(e) => checkForm(e)}
           onChange={storeData}
           className='name'
           type='text'
@@ -52,6 +104,7 @@ const Contact = () => {
           placeholder='Full Name*'
         />
         <input
+          onBlur={(e) => checkForm(e)}
           onChange={storeData}
           name='from_email'
           id='from_email'
@@ -60,6 +113,7 @@ const Contact = () => {
           placeholder='E-email*'
         />
         <input
+          onBlur={(e) => checkForm(e)}
           onChange={storeData}
           name='subjectText'
           id='subjectText'
@@ -68,12 +122,14 @@ const Contact = () => {
           placeholder='Subject*'
         />
         <textarea
+          onBlur={(e) => checkForm(e)}
           onChange={storeData}
           name='message'
           id='msg'
           placeholder='Message*'
         ></textarea>
       </div>
+      <p id='email-status'></p>
       <p id='status'></p>
       <button id='sendBtn'>Send</button>
     </form>

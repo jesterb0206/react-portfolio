@@ -91,9 +91,11 @@ main {
 }
 
 #main-section-hr {
-  margin-bottom: 30px;
+  border: 5px solid var(--orange);
+  border-radius: 1000px;
+  margin-bottom: 50px;
   opacity: 1;
-  width: 91vw;
+  width: 90vw;
 }
 
 p {
@@ -374,30 +376,52 @@ nav li a {
 }
 
 form button {
-  background-color: var(--orange);
-  color: white;
-  border: none;
+  align-self: center;
+  background-color: white;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
   cursor: pointer;
-  height: 50px;
-  width: 175px;
-  border-radius: 5px;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-form button:active {
-  background-color: #cc8500;
-  transform: scale(0.98);
-}
-
+form button:active,
 form button:hover {
-  background-color: #cc8500;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+form button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 .form-inner-container {
   column-gap: 20px;
   display: grid;
-  grid-template: 42px 42px 125px / 25vw 25vw;
+  grid-template: 42px 42px 125px / 22vw 32vw;
   margin-bottom: 20px;
-  row-gap: 20px;
+  row-gap: 25px;
   width: 100%;
 }
 
@@ -410,8 +434,8 @@ form button:hover {
 .form-inner-container input[type='text'],
 .form-inner-container textarea {
   color: var(--mint);
-  border: 3px solid black;
-  border-radius: 5px;
+  border: 3px solid var(--mint);
+  border-radius: 10px;
   padding-left: 20px;
   outline: none;
 }
@@ -453,9 +477,11 @@ form button:hover {
 }
 
 #footer hr {
-  margin-top: 30px;
+  border: 5px solid var(--orange);
+  border-radius: 1000px;
+  margin-top: 50px;
   opacity: 1;
-  width: 91vw;
+  width: 90vw;
 }
 
 .footer-icons {
@@ -554,10 +580,6 @@ form button:hover {
 
   #main-section-header {
     font-size: 28px;
-  }
-
-  #main-section-hr {
-    width: 270px;
   }
 
   #main-wrapper {
