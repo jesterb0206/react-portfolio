@@ -561,8 +561,8 @@ form button:hover {
   }
 
   #main-wrapper {
-    margin-left: 0;
-    margin-top: 125px;
+    margin-left: 15px;
+    margin-top: 75px !important;
   }
 
   #nav-stack {
