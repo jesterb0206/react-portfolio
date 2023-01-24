@@ -300,6 +300,7 @@ nav li a {
 
 #project-details {
   background-color: rgba(255, 166, 0, 0.8);
+  border-radius: 20px;
   color: white;
   backdrop-filter: blur(8px);
   height: 100%;
@@ -316,7 +317,8 @@ nav li a {
 }
 
 #project-image {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   width: 200px;
 }
 
@@ -493,6 +495,7 @@ input:-webkit-autofill:focus {
 #resume-wrapper {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 #resume-wrapper div {
@@ -506,7 +509,6 @@ input:-webkit-autofill:focus {
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
 }
 
 #resume-wrapper h1 {
@@ -515,6 +517,11 @@ input:-webkit-autofill:focus {
 
 #resume-wrapper li {
   color: var(--mint);
+  margin-bottom: 5px;
+}
+
+#resume-wrapper h1 {
+  margin-bottom: 15px;
 }
 
 /* Footer */

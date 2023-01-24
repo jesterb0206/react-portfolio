@@ -26,6 +26,7 @@ const Resume = () => {
             <li>JSON</li>
             <li>Pug</li>
             <li>React.js</li>
+            <li>Redux</li>
             <li>Tailwind CSS</li>
           </ul>
         </div>
@@ -48,6 +49,7 @@ const Resume = () => {
           <ul>
             <li>Agile Development</li>
             <li>Express.js</li>
+            <li>GraphQL</li>
             <li>MERN Stack</li>
             <li>MongoDB</li>
             <li>Mongoose</li>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {validateEmail} from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   // Setups the Form Data State Object
@@ -30,6 +31,15 @@ const Contact = () => {
       statusEl.style.color = 'red';
     } else {
       if (validateEmail(from_email)) {
+        emailjs.send('service_g58fe9j', 'template_8enefoe', {
+          from_name: fromName,
+          from_email: from_email,
+          msg: message,
+          subjectText: subjectText,
+        });
+
+        document.getElementById('contact-form').reset();
+
         statusEl.innerText = 'Message sent successfully!';
         statusEl.style.color = 'green';
         setTimeout(() => {
@@ -90,50 +100,54 @@ const Contact = () => {
     }
   };
 
+  emailjs.init('tm5ayr4Klja9j1MkC');
+
   return (
-    <form id='contact-form' onSubmit={handleSubmit}>
-      <h1 id='main-section-header'>Contact</h1>
-      <hr id='main-section-hr' />
-      <div className='form-inner-container'>
-        <input
-          onBlur={(e) => checkForm(e)}
-          onChange={storeData}
-          className='name'
-          type='text'
-          name='fromName'
-          id='fromName'
-          placeholder='Full Name*'
-        />
-        <input
-          onBlur={(e) => checkForm(e)}
-          onChange={storeData}
-          name='from_email'
-          id='from_email'
-          className='email'
-          type='email'
-          placeholder='E-email*'
-        />
-        <input
-          onBlur={(e) => checkForm(e)}
-          onChange={storeData}
-          name='subjectText'
-          id='subjectText'
-          className='subject'
-          type='text'
-          placeholder='Subject*'
-        />
-        <textarea
-          onBlur={(e) => checkForm(e)}
-          onChange={storeData}
-          name='message'
-          id='msg'
-          placeholder='Message*'
-        ></textarea>
-      </div>
-      <p id='email-status'></p>
-      <p id='status'></p>
-      <button id='sendBtn'>Send</button>
-    </form>
+    <>
+      <form id='contact-form' onSubmit={handleSubmit}>
+        <h1 id='main-section-header'>Contact</h1>
+        <hr id='main-section-hr' />
+        <div className='form-inner-container'>
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            className='name'
+            type='text'
+            name='fromName'
+            id='fromName'
+            placeholder='Full Name*'
+          />
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name='from_email'
+            id='from_email'
+            className='email'
+            type='email'
+            placeholder='E-mail*'
+          />
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name='subjectText'
+            id='subjectText'
+            className='subject'
+            type='text'
+            placeholder='Subject*'
+          />
+          <textarea
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name='message'
+            id='msg'
+            placeholder='Message*'
+          ></textarea>
+        </div>
+        <p id='email-status'></p>
+        <p id='status'></p>
+        <button id='sendBtn'>Send</button>
+      </form>
+    </>
   );
 };
 
