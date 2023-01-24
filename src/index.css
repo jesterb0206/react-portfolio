@@ -410,11 +410,14 @@ form button {
   color: #41403e;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1rem;
-  line-height: 23px;
+  font-family: Jura, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
   outline: none;
-  padding: 0.75rem;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
