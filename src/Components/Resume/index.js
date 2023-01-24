@@ -1,3 +1,5 @@
+// The Resume Component (We Import My Resume PDF From The Public Resume Folder)
+
 import React from 'react';
 
 const Resume = () => {

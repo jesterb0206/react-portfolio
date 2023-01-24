@@ -1,3 +1,5 @@
+// The Portfolio Component Which Is An Array Of Projects
+
 import React from 'react';
 import Project from '../Project';
 

@@ -1,3 +1,5 @@
+// The About Me Page Minus The Header And Footer
+
 import React from 'react';
 
 const About = () => {

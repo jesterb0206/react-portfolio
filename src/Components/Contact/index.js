@@ -1,3 +1,5 @@
+// The Contact Page Minus The Header And Footer
+
 import React, {useState} from 'react';
 import {validateEmail} from '../../utils/helpers';
 import emailjs from '@emailjs/browser';
@@ -31,6 +33,7 @@ const Contact = () => {
       statusEl.style.color = 'red';
     } else {
       if (validateEmail(from_email)) {
+        // Email.js Template
         emailjs.send('service_g58fe9j', 'template_8enefoe', {
           from_name: fromName,
           from_email: from_email,
@@ -99,6 +102,8 @@ const Contact = () => {
       updateEl(e, 'Message  Required*', 'Message*', 'msg');
     }
   };
+
+  // Email.js Public Key
 
   emailjs.init('tm5ayr4Klja9j1MkC');
 

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+// The Navigation Component (Which Is Effectively The Entire Header Component Minus My Name In The Top Left Corner)
 import React from 'react';
 
 const Navigation = ({setActivePage, activePage, activeNav, setActiveNav}) => {

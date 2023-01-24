@@ -1,3 +1,5 @@
+// The Footer Component Which Contains Social Icons
+
 import React from 'react';
 
 const Footer = () => {

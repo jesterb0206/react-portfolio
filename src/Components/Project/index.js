@@ -1,3 +1,5 @@
+// The Project Component (Which Dynamically Generates Content Based Off Of The Portfolio Component Array)
+
 import React from 'react';
 
 const Project = ({
