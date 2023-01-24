@@ -38,6 +38,7 @@ body {
 a,
 h4,
 h5,
+input,
 li,
 p,
 textarea {
@@ -306,14 +307,15 @@ nav li a {
 }
 
 #project-image {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   width: 200px;
 }
 
 #project-links {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: 10px;
   text-indent: 10px;
 }
 
@@ -336,28 +338,29 @@ nav li a {
 
 #project-stack {
   color: white;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #project-stack,
 #project-title {
-  position: relative;
-  left: 15px;
-  top: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #project-title {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 #portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  left: 0;
 }
 
 #single-project {
-  margin-right: 20px;
-  margin-top: 10px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -578,7 +581,6 @@ form button:focus {
 
   #contact-form,
   nav,
-  #portfolio,
   #resume {
     align-items: center;
     display: flex;
@@ -600,13 +602,6 @@ form button:focus {
     display: flex;
   }
 
-  #portfolio-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    left: 0;
-  }
-
   #resume-wrapper {
     justify-content: center;
     text-align: left;
@@ -614,11 +609,6 @@ form button:focus {
 
   #resume-wrapper div {
     margin-right: 0 !important;
-  }
-
-  #single-project {
-    margin-left: 25px;
-    margin-right: 20px;
   }
 
   #status {
@@ -687,17 +677,23 @@ form button:focus {
     text-indent: 24px;
   }
 
-  #project-desc,
+  #project-details h1,
+  p {
+    text-align: center;
+  }
+
+  #project-image {
+    width: 80vw !important;
+  }
+
+  #project-image {
+    width: 80vw !important;
+  }
+
   #project-links {
-    text-indent: 0 !important;
-  }
-
-  #project-image {
-    width: 80vw !important;
-  }
-
-  #project-image {
-    width: 80vw !important;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   #project-outer-wrapper {
