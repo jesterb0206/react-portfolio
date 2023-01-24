@@ -392,6 +392,8 @@ nav li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 90vw;
+  margin-left: 4vw;
 }
 
 iframe {
@@ -501,24 +503,35 @@ input:-webkit-autofill:focus {
 /* Resume Styling */
 
 #backend img {
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
 #dev-tools img {
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
 #frontend img {
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
-#resume-wrapper {
+#resume {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90vw;
+  margin-left: 4vw;
   text-align: center;
+}
+
+#resume-wrapper ul li {
+  margin-right: 35px;
+  list-style-type: none;
 }
 
 #resume-wrapper div {
@@ -661,15 +674,6 @@ input:-webkit-autofill:focus {
 
   #nav-stack {
     display: flex;
-  }
-
-  #resume-wrapper {
-    justify-content: center;
-    text-align: left;
-  }
-
-  #resume-wrapper div {
-    margin-right: 0 !important;
   }
 
   #status {

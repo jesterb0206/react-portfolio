@@ -156,7 +156,7 @@ const Contact = () => {
           src='https://giphy.com/embed/elQ5RkAm90DZpirhRg'
           width='200'
           height='200'
-          class='giphy-embed'
+          className='giphy-embed'
           allowFullScreen
         ></iframe>
         <p>
