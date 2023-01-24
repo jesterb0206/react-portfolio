@@ -494,6 +494,21 @@ input:-webkit-autofill:focus {
 
 /* Resume Styling */
 
+#backend img {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#dev-tools img {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#frontend img {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
 #resume-wrapper {
   display: flex;
   flex-wrap: wrap;
