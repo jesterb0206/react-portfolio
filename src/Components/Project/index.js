@@ -19,10 +19,20 @@ const Project = ({
       </div>
       <div id='project-bottom-section'>
         <div id='project-links'>
-          <a target='_blank' rel='noreferrer noopener' href={github_link}>
+          <a
+            id='smaller-anchor'
+            target='_blank'
+            rel='noreferrer noopener'
+            href={github_link}
+          >
             GitHub Repository
           </a>
-          <a target='_blank' rel='noreferrer noopener' href={deployed_link}>
+          <a
+            id='smaller-anchor'
+            target='_blank'
+            rel='noreferrer noopener'
+            href={deployed_link}
+          >
             Deployed Link
           </a>
         </div>

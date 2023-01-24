@@ -46,6 +46,7 @@ const Contact = () => {
 
   const storeData = (e) => {
     document.getElementById('status').textContent = '';
+    document.getElementById('email-status').textContent = '';
 
     if (e.target.name === 'from_email') {
       const emailStatusEl = document.getElementById('email-status');

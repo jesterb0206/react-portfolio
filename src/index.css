@@ -81,6 +81,11 @@ a {
   font-size: 24px;
 }
 
+#smaller-anchor {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
 main {
   align-items: flex-start;
   display: flex;
@@ -115,6 +120,7 @@ p {
 
 #header-logo {
   cursor: pointer;
+  font-size: 35px;
   opacity: 0.9;
   user-select: none;
 }
@@ -455,16 +461,17 @@ form button:focus {
 
 .form-inner-container input::placeholder,
 .form-inner-container textarea::placeholder {
-  color: var(--mint);
+  color: white;
   font-size: 18px;
 }
 
 .form-inner-container input[type='email'],
 .form-inner-container input[type='text'],
 .form-inner-container textarea {
+  background-color: var(--mint);
   border: 3px solid var(--mint);
   border-radius: 10px;
-  color: var(--mint);
+  color: white;
   font-size: 18px;
   padding-left: 20px;
   outline: none;
@@ -486,7 +493,17 @@ form button:focus {
 }
 
 #resume-wrapper div {
-  margin-right: 50px;
+  border: 5px solid var(--mint);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 #resume-wrapper h1 {
@@ -571,12 +588,6 @@ form button:focus {
 
   #about-wrapper {
     align-items: center;
-  }
-
-  #backend h1,
-  #dev-tools h1,
-  #frontend h1 {
-    font-size: 22px;
   }
 
   #backend li,
