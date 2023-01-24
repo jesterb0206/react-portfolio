@@ -374,6 +374,13 @@ nav li a {
   margin-top: 25px;
 }
 
+/* #contact-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 #resume li {
   list-style: circle;
   margin-left: 22.5px;
@@ -441,14 +448,16 @@ form button:focus {
 .form-inner-container input::placeholder,
 .form-inner-container textarea::placeholder {
   color: var(--mint);
+  font-size: 18px;
 }
 
 .form-inner-container input[type='email'],
 .form-inner-container input[type='text'],
 .form-inner-container textarea {
-  color: var(--mint);
   border: 3px solid var(--mint);
   border-radius: 10px;
+  color: var(--mint);
+  font-size: 18px;
   padding-left: 20px;
   outline: none;
 }
