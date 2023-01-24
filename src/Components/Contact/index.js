@@ -69,7 +69,7 @@ const Contact = () => {
   const updateEl = (e, errorPlaceholder, defaultPlaceholder, id) => {
     if (e.target.value === '') {
       document.getElementById(id).placeholder = errorPlaceholder;
-      document.getElementById(id).style.border = '2px solid red';
+      document.getElementById(id).style.border = '2px solid #ffa500';
     } else {
       document.getElementById(id).placeholder = defaultPlaceholder;
       document.getElementById(id).style.border = '2px solid transparent';
