@@ -387,12 +387,17 @@ nav li a {
   margin-top: 25px;
 }
 
-/* #contact-form {
+#contact-form {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-} */
+}
+
+iframe {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
 #resume li {
   list-style: circle;

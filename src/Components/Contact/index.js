@@ -151,6 +151,19 @@ const Contact = () => {
         <p id='email-status'></p>
         <p id='status'></p>
         <button id='sendBtn'>Send</button>
+        <iframe
+          title='Animated Cartoon Character Dancing'
+          src='https://giphy.com/embed/elQ5RkAm90DZpirhRg'
+          width='200'
+          height='200'
+          class='giphy-embed'
+          allowFullScreen
+        ></iframe>
+        <p>
+          <a href='https://giphy.com/gifs/windows-windows95-windows95man-elQ5RkAm90DZpirhRg'>
+            via GIPHY
+          </a>
+        </p>
       </form>
     </>
   );
