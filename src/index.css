@@ -461,6 +461,7 @@ form button:focus {
   column-gap: 20px;
   display: grid;
   grid-template: 42px 42px 125px / 22vw 32vw;
+  justify-content: center;
   margin-bottom: 20px;
   row-gap: 25px;
   width: 100%;
