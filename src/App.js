@@ -16,10 +16,34 @@ function App() {
     resume: false,
   });
 
+  const [activeNav, setActiveNav] = useState(false);
+
   return (
-    <main>
+    <main
+      onClick={(e) => {
+        if (
+          e.target.className === '' ||
+          !e.target.className === 'nav-stack active' ||
+          !e.target.className === 'nav-stack' ||
+          !e.target.className === 'mobile-nav active' ||
+          e.target.className === 'subject' ||
+          e.target.className === 'name' ||
+          e.target.className === 'email'
+        ) {
+          return setActiveNav(false);
+        }
+        if (e.target.className === 'mobile-nav active') {
+          return setActiveNav(true);
+        }
+      }}
+    >
       <nav>
-        <Header activePage={activePage} setActivePage={setActivePage} />
+        <Header
+          activePage={activePage}
+          setActivePage={setActivePage}
+          activeNav={activeNav}
+          setActiveNav={setActiveNav}
+        />
       </nav>
       <section id='main-wrapper'>
         {activePage.about ? (

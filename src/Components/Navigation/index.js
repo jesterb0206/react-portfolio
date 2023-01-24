@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useState} from 'react';
+import React from 'react';
 
-const Navigation = ({setActivePage, activePage}) => {
+const Navigation = ({setActivePage, activePage, activeNav, setActiveNav}) => {
   const handlePage = (e) => {
     if (
       e.target.innerText === 'About Me' ||
@@ -21,8 +21,6 @@ const Navigation = ({setActivePage, activePage}) => {
     }
     setActiveNav(false);
   };
-
-  const [activeNav, setActiveNav] = useState(false);
 
   return (
     <div>
@@ -68,49 +66,46 @@ const Navigation = ({setActivePage, activePage}) => {
         src='https://imgpile.com/images/RVqHWF.png'
         alt='Navigation Icon'
       ></img>
-      <ul className={`mobile-nav ${activeNav ? 'active' : ''}`}>
-        <li>
-          <a
-            className={`navItem ${activePage.about ? 'active' : ''}`}
-            href='#About'
-            onClick={(e) => handlePage(e)}
-          >
-            About Me
-          </a>
-        </li>
-        <li>
-          <a
-            className={`navItem ${activePage.portfolio ? 'active' : ''}`}
-            href='#Portfolio'
-            onClick={(e) => handlePage(e)}
-          >
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a
-            className={`navItem ${activePage.contact ? 'active' : ''}`}
-            href='#Contact'
-            onClick={(e) => handlePage(e)}
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            className={`navItem ${activePage.resume ? 'active' : ''}`}
-            href='#Resume'
-            onClick={(e) => handlePage(e)}
-          >
-            Resume
-          </a>
-        </li>
-        <li id='nav-logo'>
-          <a className={`navItem`} href='#About' onClick={(e) => handlePage(e)}>
-            Bradley Jester
-          </a>
-        </li>
-      </ul>
+      <div>
+        <ul className={`mobile-nav ${activeNav ? 'active' : ''}`}>
+          <li>
+            <a
+              className={`navItem ${activePage.about ? 'active' : ''}`}
+              href='#About'
+              onClick={(e) => handlePage(e)}
+            >
+              About Me
+            </a>
+          </li>
+          <li>
+            <a
+              className={`navItem ${activePage.portfolio ? 'active' : ''}`}
+              href='#Portfolio'
+              onClick={(e) => handlePage(e)}
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              className={`navItem ${activePage.contact ? 'active' : ''}`}
+              href='#Contact'
+              onClick={(e) => handlePage(e)}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              className={`navItem ${activePage.resume ? 'active' : ''}`}
+              href='#Resumes'
+              onClick={(e) => handlePage(e)}
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
