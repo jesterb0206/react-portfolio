@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jesterb0206/react-portfolio/static/css/main.024974c0.css",
+    "main.js": "/jesterb0206/react-portfolio/static/js/main.4df38262.js",
+    "static/media/Jura-Medium.ttf": "/jesterb0206/react-portfolio/static/media/Jura-Medium.5e71b19412091e421706.ttf",
+    "static/media/AnonymousPro-Bold.ttf": "/jesterb0206/react-portfolio/static/media/AnonymousPro-Bold.a722102835c269d44886.ttf",
+    "index.html": "/jesterb0206/react-portfolio/index.html",
+    "main.024974c0.css.map": "/jesterb0206/react-portfolio/static/css/main.024974c0.css.map",
+    "main.4df38262.js.map": "/jesterb0206/react-portfolio/static/js/main.4df38262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.024974c0.css",
+    "static/js/main.4df38262.js"
+  ]
+}
