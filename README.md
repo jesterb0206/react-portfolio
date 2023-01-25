@@ -63,7 +63,35 @@ Clone the repository to your local machine, open your terminal, and navigate to 
 
 <br>
 
-**To-Do**
+1. My React Portfolio consists of 4 main sections: About Me, Contact, Portfolio, and Resume. To navigate to a different section simply click on the name of the section you wish to view in the navigation bar (on smaller devices click on the hamburger menu icon in the upper right-hand corner of the screen to toggle the menu).
+
+<br>
+
+![About Me Page](assets/images/about-me.png)
+
+<br>
+
+2. In the Portfolio section simply hover over an image to see the name of the project and the tech stack/technologies used to build it. Underneath each project image are links to the deployed project and its corresponding GitHub repository.
+
+<br>
+
+![Portfolio Page](assets/images/portfolio.png)
+
+<br>
+
+3. If you wish to contact me enter your full name, email address, the subject of your message and the message body in the contact form. Then simply click on the `Send` button.
+
+<br>
+
+![Contact Page](assets/images/contact.png)
+
+<br>
+
+4. In the the Resume section you can view a list of my proficiencies and download my resume. To download my resume simply click on the text that reads `Download Here!`.
+
+<br>
+
+![Resume Page](assets/images/resume.png)
 
 <br>
 
