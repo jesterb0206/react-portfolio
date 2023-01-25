@@ -47,7 +47,7 @@
 
 <br>
 
-**To-Do**
+This web application is a SPA (Single Page Application) that was built using React.js. There are 4 main sections: `About Me`, `Contact`, `Portfolio` and `Resume`. In the resume section there's a link to download my resume PDF. Also, it's responsive and looks clean across all different device widths. If you wish to contact me simply fill out the contact form or email me at `jesterb@seattleu.edu`. Lastly, if click on the icons in the footer you can view my GitHub, LinkedIn and Instagram accounts.
 
 <br>
 
