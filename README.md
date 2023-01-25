@@ -2,6 +2,55 @@
 
 <br>
 
+## License
+
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[This application is under the MIT license](https://opensource.org/licenses/MIT)
+
+<br>
+
+## Deployment Link
+
+<br>
+
+**To-Do**
+
+<br>
+
+## Table of Contents
+
+<br>
+
+**To-Do**
+
+<br>
+
+## Description
+
+<br>
+
+**To-Do**
+
+<br>
+
+## Installation
+
+<br>
+
+**To-Do**
+
+<br>
+
+## Usage
+
+<br>
+
+**To-Do**
+
+<br>
+
 ## Badges
 
 <br>
