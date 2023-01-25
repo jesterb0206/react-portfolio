@@ -17,16 +17,18 @@ const About = () => {
       <h1 id='bradley'>Hi, I'm Bradley!</h1>
       <div id='about-inner-wrapper'>
         <p>
-          Front-end web developer leveraging background in communication to
-          build more intuitive user experiences on the web. Recently earned a
-          certificate in full stack development from University of Washington
-          and developed skills in JavaScript, CSS, React.js, and responsive web
-          design. Known as an innovative problem-solver passionate about
-          developing apps, with a focus on mobile-first design and development.
-          Aim for each project is to best engage the audience for an impactful
-          user experience. Excited to leverage skills in the future as part of a
-          fast-paced, quality-driven team to build better experiences on the
-          web.
+          I am a Seattle based driven and detail-oriented full stack web
+          developer with experience in Javascript, CSS, React.js and responsive
+          web design. When I am not coding, you can find me producing music,
+          watching baseball or in the great outdoors. My educational background
+          includes a bachelor’s degree in Communications from Seattle University
+          and a Full Stack Web Development certification from the University of
+          Washington. I am motivated to learn, apply skills and excel in
+          building an impactful user experience to best attract an audience. I
+          am passionate about developing apps with prioritization on
+          mobile-first design and development. I am eager to work cohesively
+          with others in a fast-paced, quality-driven team to enhance web
+          experience.
         </p>
       </div>
     </div>
