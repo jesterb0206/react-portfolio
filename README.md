@@ -99,10 +99,6 @@ Clone the repository to your local machine, open your terminal, and navigate to 
 
 <br>
 
-![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=for-the-badge&logo=Adobe%20Acrobat%20Reader&logoColor=white)
-
-<br>
-
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 <br>
