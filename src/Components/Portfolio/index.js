@@ -6,12 +6,12 @@ import Project from '../Project';
 const Portfolio = () => {
   const project = [
     {
-      title: 'Art Cart',
-      stack: 'MVC',
-      image_url: 'https://i.imgur.com/7uqgR0b.png?1',
-      image_alt: 'Art Cart Website',
-      github_link: 'https://github.com/jesterb0206/art-cart',
-      deployed_link: 'https://art-cart-gui-guys-production.herokuapp.com/login',
+      title: 'Fit Nuts',
+      stack: 'MERN',
+      image_url: 'https://i.imgur.com/l4XTCbW.png',
+      image_alt: 'Fit Nuts Website',
+      github_link: 'https://github.com/jesterb0206/fit-nuts',
+      deployed_link: 'https://fit-nuts.herokuapp.com',
     },
     {
       title: 'Book Search Engine',
@@ -38,12 +38,12 @@ const Portfolio = () => {
       deployed_link: 'https://natours-production-0a23.up.railway.app/',
     },
     {
-      title: 'Work Day Scheduler',
-      stack: 'Bootstrap, Moment.js, etc.',
-      image_url: 'https://i.imgur.com/3YiL2Tg.png',
-      image_alt: 'Work Day Scheduler Website',
-      github_link: 'https://github.com/jesterb0206/work-day-scheduler',
-      deployed_link: 'https://jesterb0206.github.io/work-day-scheduler/',
+      title: 'Art Cart',
+      stack: 'MVC',
+      image_url: 'https://i.imgur.com/7uqgR0b.png?1',
+      image_alt: 'Art Cart Website',
+      github_link: 'https://github.com/jesterb0206/art-cart',
+      deployed_link: 'https://art-cart-gui-guys-production.herokuapp.com/login',
     },
     {
       title: 'Weather Dashboard',
@@ -53,6 +53,22 @@ const Portfolio = () => {
       github_link: 'https://github.com/jesterb0206/server-side-apis-challenge',
       deployed_link:
         'https://jesterb0206.github.io/server-side-apis-challenge/',
+    },
+    {
+      title: 'Work Day Scheduler',
+      stack: 'Bootstrap, Moment.js, etc.',
+      image_url: 'https://i.imgur.com/3YiL2Tg.png',
+      image_alt: 'Work Day Scheduler Website',
+      github_link: 'https://github.com/jesterb0206/work-day-scheduler',
+      deployed_link: 'https://jesterb0206.github.io/work-day-scheduler/',
+    },
+    {
+      title: 'The QTRO',
+      stack: 'HTML, CSS, JavaScript, Tailwind CSS, jQuery, etc.',
+      image_url: 'https://i.imgur.com/MPuqqcM.png',
+      image_alt: 'The QTRO: A Comprehensive News Aggregator Website',
+      github_link: 'https://github.com/jesterb0206/project-one',
+      deployed_link: 'https://nelson92.github.io/project-one/',
     },
   ];
 
