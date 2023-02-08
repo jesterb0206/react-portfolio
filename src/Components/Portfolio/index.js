@@ -38,22 +38,6 @@ const Portfolio = () => {
       deployed_link: 'https://natours-production-0a23.up.railway.app/',
     },
     {
-      title: 'Tech Blog',
-      stack: 'MVC',
-      image_url: 'https://i.imgur.com/YmbUx0C.png',
-      image_alt: 'Tech Blog Website',
-      github_link: 'https://github.com/jesterb0206/tech-blog',
-      deployed_link: 'https://tech-blog-0206.herokuapp.com/',
-    },
-    {
-      title: 'Today I Learned',
-      stack: 'Node.js, React.js, etc.',
-      image_url: 'https://i.imgur.com/KlZKarL.png',
-      image_alt: 'Today I Learned Website',
-      github_link: 'https://github.com/jesterb0206/today-i-learned',
-      deployed_link: 'https://today-i-learned-0206.netlify.app/',
-    },
-    {
       title: 'Work Day Scheduler',
       stack: 'Bootstrap, Moment.js, etc.',
       image_url: 'https://i.imgur.com/3YiL2Tg.png',
