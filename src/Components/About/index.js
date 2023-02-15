@@ -17,18 +17,17 @@ const About = () => {
       <h1 id='bradley'>Hi, I'm Bradley!</h1>
       <div id='about-inner-wrapper'>
         <p>
-          I am a Seattle based driven and detail-oriented full stack web
-          developer with experience in Javascript, CSS, React.js and responsive
+          I am a Seattle-based, driven, and detail-oriented full stack web
+          developer with experience in JavaScript, CSS, React.js and responsive
           web design. When I am not coding, you can find me producing music,
           watching baseball or in the great outdoors. My educational background
           includes a bachelor’s degree in Communications from Seattle University
-          and a Full Stack Web Development certification from the University of
+          and a certificate in Full Stack Web Development from the University of
           Washington. I am motivated to learn, apply skills and excel in
-          building an impactful user experience to best attract an audience. I
-          am passionate about developing apps with prioritization on
-          mobile-first design and development. I am eager to work cohesively
-          with others in a fast-paced, quality-driven team to enhance web
-          experience.
+          building an impactful user experience to best attract an audience. In
+          addition, I am passionate about developing apps with a prioritization
+          on mobile-first design and am eager to work cohesively with others in
+          a fast-paced, quality-driven team to enhance web experience.
         </p>
       </div>
     </div>
