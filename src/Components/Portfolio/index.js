@@ -30,14 +30,6 @@ const Portfolio = () => {
       deployed_link: 'https://just-another-text-editor-0206.herokuapp.com/',
     },
     {
-      title: 'Natours',
-      stack: 'MVC',
-      image_url: 'https://i.imgur.com/iJ1SCTj.png',
-      image_alt: 'Natours Website',
-      github_link: 'https://github.com/jesterb0206/natours',
-      deployed_link: 'https://natours-production-0a23.up.railway.app/',
-    },
-    {
       title: 'Art Cart',
       stack: 'MVC',
       image_url: 'https://i.imgur.com/7uqgR0b.png?1',
@@ -61,14 +53,6 @@ const Portfolio = () => {
       image_alt: 'Work Day Scheduler Website',
       github_link: 'https://github.com/jesterb0206/work-day-scheduler',
       deployed_link: 'https://jesterb0206.github.io/work-day-scheduler/',
-    },
-    {
-      title: 'The QTRO',
-      stack: 'HTML, CSS, JavaScript, Tailwind CSS, jQuery, etc.',
-      image_url: 'https://i.imgur.com/MPuqqcM.png',
-      image_alt: 'The QTRO: A Comprehensive News Aggregator Website',
-      github_link: 'https://github.com/jesterb0206/project-one',
-      deployed_link: 'https://nelson92.github.io/project-one/',
     },
   ];
 
