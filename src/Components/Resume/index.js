@@ -7,7 +7,7 @@ const Resume = () => {
     <div id='resume'>
       <h1 id='main-section-header'>Resume</h1>
       <hr id='main-section-hr' />
-      <a href={`./Resume/Bradley-Jester-Resume.pdf`} download>
+      <a href={`./Resume/Bradley-Jester-Resume.docx`} download>
         Download Here!
       </a>
       <div id='resume-wrapper'>
