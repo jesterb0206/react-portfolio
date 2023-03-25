@@ -34,8 +34,8 @@ const Portfolio = () => {
       stack: 'HTML, CSS, JavaScript, jQuery, Tailwind',
       image_url: 'https://i.imgur.com/00uWO1b.png',
       image_alt: 'The Quatro Website',
-      github_link: 'https://github.com/jesterb0206/project-one',
-      deployed_link: 'https://jesterb0206.github.io/project-one/',
+      github_link: 'https://github.com/jesterb0206/news-aggregator',
+      deployed_link: 'https://jesterb0206.github.io/news-aggregator/',
     },
     {
       title: 'Today I Learned',
